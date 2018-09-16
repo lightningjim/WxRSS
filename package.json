@@ -1,6 +1,6 @@
 {
   "name": "wx-rss",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -20,8 +20,14 @@
     "@angular/platform-browser": "^6.1.0",
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
+    "@fortawesome/angular-fontawesome": "^0.2.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.4",
+    "@fortawesome/free-brands-svg-icons": "^5.3.1",
+    "@fortawesome/free-regular-svg-icons": "^5.3.1",
+    "@fortawesome/free-solid-svg-icons": "^5.3.1",
     "@types/chart.js": "^2.7.34",
     "angular-bootstrap-md": "^6.2.3",
+    "angular-fontawesome": "^1.0.0",
     "angular5-csv": "^0.2.10",
     "chart.js": "^2.5.0",
     "core-js": "^2.5.4",

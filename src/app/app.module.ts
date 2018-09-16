@@ -9,6 +9,12 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { SubnavComponent } from './subnav/subnav.component';
 import { SPCItemComponent } from './spcitem/spcitem.component';
 
+// import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+// import { library } from '@fortawesome/fontawesome-svg-core';
+// import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
+// library.add(faCalendarAlt);
+
+
 @NgModule({
   declarations: [
     AppComponent,

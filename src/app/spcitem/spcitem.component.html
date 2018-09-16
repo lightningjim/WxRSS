@@ -1,3 +1,13 @@
-<p>
-  spcitem works!
-</p>
+<mdb-card cascade="true">
+	<mdb-card-body>
+		<mdb-card-title>
+			<h3>{{ SPCItem.title }} </h3>
+			<p class="h6 d-flex flex-row">{{ SPCItem.source }}</p>
+		</mdb-card-title>
+		<mbd-card-text>
+			{{ SPCItem.description }}
+		</mbd-card-text>
+		<a href="{{ SPCItem.link }}" class="d-flex flex-row">Link</a>
+		<p *ngIf="SPCItem.pubDate" class="d-flex flex-row"><mdb-icon icon="calendar"></mdb-icon>&nbsp;{{ SPCItem.pubDate | date:'medium'}}</p>
+	</mdb-card-body>
+</mdb-card>

@@ -1,7 +1,7 @@
 <mdb-navbar SideClass="navbar navbar-expand-md navbar-dark indigo" [containerInside]="true">
   <mdb-navbar-brand>
     <a class="logo navbar-brand" href="#">
-      <span id="header" class="h1">WxRSS</span>
+      <span id="header" class="h1">WxRSS&nbsp;<mdb-icon icon="feed"></mdb-icon></span>
     </a>
   </mdb-navbar-brand>
   <links>
@@ -32,7 +32,7 @@
         </div>
       </li>
     </ul>
-    <span *ngIf="current | async as wx; else noWx" id="currentwx" class="text-white mr-sm-2">{{ wx.currently.temperature | number:'1.0-0' }}<ng2-wi [name]="'fahrenheit'"></ng2-wi> <ng2-wi [name]="weatherIcon(wx.currently.icon)"></ng2-wi></span>
+    <span *ngIf="current as wx" id="current" class="text-white mr-sm-2 h1" mdbTooltip="{{ wx.currently.summary }}" placement="bottom">{{ wx.currently.temperature | number:'1.0-0' }}<ng2-wi [name]="'degrees'" [size]="2"></ng2-wi>F&nbsp;<ng2-wi [name]="weatherIcon(wx.currently.icon)" [size]="2"></ng2-wi></span>
   </links>
 </mdb-navbar>
 <ng-template #noWx></ng-template>

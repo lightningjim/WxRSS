@@ -1,2 +1,8 @@
 <app-navigation></app-navigation>
 
+<div class="col-md-4">
+	<app-spcitem
+		*ngFor="let SPCItem of testSPCItems"
+		[SPCItem]="SPCItem">
+	</app-spcitem>
+</div>
